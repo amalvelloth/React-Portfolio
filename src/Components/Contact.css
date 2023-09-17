@@ -1,0 +1,227 @@
+@font-face {
+    font-family: ralewayeb;
+    src: url(../Fonts/Raleway-ExtraBold.ttf);
+}
+@font-face {
+    font-family: ralewayb;
+    src: url(../Fonts/Raleway-Bold.ttf);
+}
+@font-face {
+    font-family: ralewaym;
+    src: url(../Fonts/Raleway-Medium.ttf);
+}
+@font-face {
+    font-family: ralewayr;
+    src: url(../Fonts/Raleway-Regular.ttf);
+}
+@font-face {
+    font-family: ralewayl;
+    src: url(../Fonts/Raleway-Light.ttf);
+}
+@font-face {
+    font-family: ubuntu;
+    src: url();
+}
+
+.Contact {
+    display: grid;
+    flex-direction: row;
+    height: 100vh;
+    align-items: center;
+    background-color: white;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.Left {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    align-items: left;
+}
+
+.contact-box {
+    position: relative;
+    max-width: 100%;
+    display: grid;
+    align-items: left;
+    margin: 6rem 0 0 11.5%;
+    left: 0;
+}
+
+.getintouch{
+    color: #7777FF;
+    font-family: ralewayb;
+}
+.contact-title {
+    font-size: 5rem;
+    color: #1D1F45;
+    font-family: ralewayeb;
+}
+.contact-para{
+    font-family: ralewaym;
+    color: #777;
+    font-size: 0.8rem;
+    padding: 3rem 0;
+}
+.mail{
+    font-family: ralewayb;
+    padding: 0 0 1.8rem 4rem;
+    color: #1D1F45;
+}
+.phone{
+    font-family: ralewayb;
+    padding: 1.8rem 0 0 4rem;
+    color: #1D1F45;
+}
+.socialapps{
+    display: flex;
+}
+.social{
+    color: #1D1F45;
+    padding-right: 1rem;
+}
+.socialapps{
+    padding-top: 6rem;
+    font-family: ralewayb;
+}
+.phone-title{
+    display: flex;
+    gap: 2rem;
+    margin-left: -4rem;
+}
+
+.card-form {
+    display: grid;
+    position: relative;
+    height: fit-content;
+    max-width: 500px;
+    margin-top: 3.5rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    overflow: hidden;
+    box-shadow: 0px 0px 13px -5px;
+    transition: 0.3s;
+    animation: ease-in;
+    border-radius: 1rem;
+    background-color: white;
+    color: #7777FF;
+}
+.card-form:hover{
+    transform: scale(1.01);
+    box-shadow: 0px 0px 30px -10px;
+    color: #7777FF;
+}
+
+.form-content{
+    font-family: ralewayr;
+    font-size: 0.8rem;
+    color: black;
+    padding: 0.5rem 2rem 0 2rem
+}
+.form-name{
+    font-size: 0.8rem;
+}
+.form-text1{
+    display: flex;
+    gap: 1.5rem;
+}
+.form-text, .form-text2, .form-text3, .form-text4 {
+    padding: 0 0 1rem 0;
+    font-family: ralewayl;
+}
+.form-controln{
+    margin-top: 0.3rem;
+    width: 50%;
+    padding: 0.5rem;
+}
+.form-control{
+    margin-top: 0.3rem;
+    width: 100%;
+    padding: 0.5rem;
+}
+.form-controlm{
+    margin-top: 0.3rem;
+    width: 100%;
+    padding-top: 4.5rem;
+}
+
+.msg-btn{
+    box-shadow: -10px 5px 20px rgba(0, 0, 0, 0.205);
+    margin: 1rem 0;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    padding-top: 0.7rem;
+    padding-bottom: 0.7rem;
+    border-radius: 18px;
+    color: white;
+    background-color: rgb(102, 102, 255);
+    outline: none;
+    border: none;
+    cursor: pointer;
+    font-family: ralewaym; 
+}
+.msg-btn:hover{
+    font-family: ralewayeb;
+    color: black;
+    background-color: rgb(43, 71, 231);
+}
+
+.fb{
+    margin: -0.35rem 0.5rem 0 0.5rem;
+    color: #7777FF;
+}
+.fb:hover{
+    color: rgb(43, 71, 231);
+}
+.insta{
+    margin: -0.35rem 0.5rem 0 0.5rem;
+    color: #7777FF;
+}
+.insta:hover{
+    color: rgb(43, 71, 231);
+}
+.twitter{
+    margin: -0.35rem 0.5rem 0 0.5rem;
+    color: #7777FF;
+}
+.twitter:hover{
+    color: rgb(43, 71, 231);
+}
+
+input{
+    border: 1px solid #7777ff73;
+    outline: none;
+    border-radius: 0.2rem;
+}
+input:focus {
+    box-shadow: 0px 0px 5px -1px #7777FF; 
+}
+
+@media (max-width: 400px) {
+    
+}
+@media (max-width: 480px) {
+    .contact-title{
+        font-size: 500%;
+    }
+}
+@media (max-width: 700px) {
+    .Contact{
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        width: 100%;
+    }
+    .contact-box{
+        margin-left: 0%;
+        padding: 2rem;
+        max-width: 100%;
+    }
+    .card-form{
+        margin-bottom: 2rem;
+    }
+}
+
+@media (min-width: 790px) {
+
+}

@@ -1,0 +1,149 @@
+@font-face {
+    font-family: ralewayeb;
+    src: url(../Fonts/Raleway-ExtraBold.ttf);
+}
+
+@font-face {
+    font-family: ralewayb;
+    src: url(../Fonts/Raleway-Bold.ttf);
+}
+
+@font-face {
+    font-family: ralewaym;
+    src: url(../Fonts/Raleway-Medium.ttf);
+}
+
+.Portfolio {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: whitesmoke;
+}
+
+.portfolio-title{
+    margin: 5rem 0 0 0;
+    font-family: ralewayb;
+}
+.portfolio-title::after{
+    display: flex;
+    content: "";
+    background-color: #6666ff;
+    margin: 0.5rem 0;
+    height: 5px;
+    border-radius: 1rem;
+}
+
+.container {
+    width: 85%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 2px;
+}
+
+.image-section {
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+    height: 225px;
+    background-color: grey;
+}
+
+.cards .img-one {
+    background-image: url('../images/netflix-ad-tier-blocked-titles.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.cards .img-two {
+    background-image: url('../images/screenshot.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.cards .img-three {
+    background-image: url('../images/3250830568.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.cards {
+    margin: 5rem 1rem 1rem 1rem;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.5rem;
+    box-shadow: 0px 0px 10px -1px #999;
+    display: grid;
+    flex-direction: column;
+    background-color: white;
+    height: fit-content;
+}
+
+.btn1 {
+    margin: 0.5rem;
+    box-shadow: -10px 5px 20px rgba(0, 0, 0, 0.205);
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    padding-top: 0.7rem;
+    padding-bottom: 0.7rem;
+    border-radius: 18px;
+    color: white;
+    background-color: rgb(102, 102, 255);
+    outline: none;
+    border: none;
+    cursor: pointer;
+    font-family: ralewaym;
+}
+
+.btn1:hover {
+    color: black;
+    background-color: rgb(43, 71, 231);
+}
+
+.btn2 {
+    margin: 0.5rem;
+    box-shadow: -10px 5px 20px rgba(0, 0, 0, 0.205);
+    border-color: black;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    padding-top: 0.7rem;
+    padding-bottom: 0.7rem;
+    border-radius: 18px;
+    color: white;
+    background-color: rgb(255, 98, 98);
+    outline: none;
+    border: none;
+    cursor: pointer;
+    font-family: ralewaym;
+}
+
+.btn2:hover {
+    color: black;
+    background-color: rgb(255, 65, 65);
+}
+
+.card-title {
+    font-family: ralewayb;
+}
+
+.card-description {
+    line-height: 1.5rem;
+    font-size: 0.8rem;
+    font-family: ralewaym;
+    color: black;
+    margin: 0.5rem 0;
+}
+
+.content {
+    padding: 20px 10px;
+    text-align: center;
+}
+
+.btns {
+    justify-content: center;
+}
+
