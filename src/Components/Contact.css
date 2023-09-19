@@ -18,10 +18,7 @@
     font-family: ralewayl;
     src: url(../Fonts/Raleway-Light.ttf);
 }
-@font-face {
-    font-family: ubuntu;
-    src: url();
-}
+
 
 .Contact {
     display: grid;
