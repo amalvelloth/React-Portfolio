@@ -1,10 +1,8 @@
-import React, { useRef } from 'react'
 import { useState, useEffect } from 'react';
 import './Home.css'
 import './Navbar.css'
 import Lottie from 'lottie-react';
 import animationData from '../Animation/animation_lkque6et.json'
-import { FiGithub } from 'react-icons/fi'
 import avatar from '../images/Picsart_23-09-05_17-23-44-994.png'
 import Tilt from "react-parallax-tilt";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -92,7 +90,7 @@ const Home = () => {
             </div>
             <div className='Image-container' >
               <Tilt>
-                <img src={avatar} className='avatar' alt='Avatar Image' />
+                <img src={avatar} className='avatar' alt='Avatar' />
               </Tilt>
             </div>
 

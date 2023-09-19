@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
 import './Navbar.css'
 import { NavLink } from 'react-router-dom';
-import { FiGithub } from 'react-icons/fi'
 
 
 class Navbar extends Component {

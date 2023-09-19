@@ -20,7 +20,7 @@ function About() {
       </div>
       <div class="portfolio-card">
         <div class="card-image">
-          <img src={img1} alt="Project Image" />
+          <img src={img1} alt="" />
         </div>
         <div class="card-content">
           <h2>Why choose me</h2>
