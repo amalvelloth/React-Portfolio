@@ -123,10 +123,14 @@ const Home = () => {
         <div className='introduction-content2'>
           <h1>FIND ME ON</h1>
           <p>Feel free to <strong>connect</strong> with me</p>
-          <FontAwesomeIcon className='apps' icon={faFacebookF}></FontAwesomeIcon>
-          <FontAwesomeIcon className='apps' icon={faXTwitter}></FontAwesomeIcon>
-          <FontAwesomeIcon className='apps' icon={faInstagram}></FontAwesomeIcon>
-          <FontAwesomeIcon className='apps' icon={faGithub}></FontAwesomeIcon>
+          <a rel="noreferrer" href="https://m.facebook.com/profile.php?id=100010112358900">
+          <FontAwesomeIcon className='apps' icon={faFacebookF}></FontAwesomeIcon></a>
+          <a rel="noreferrer" href="https://www.twitter.com/ImZeke7">
+          <FontAwesomeIcon className='apps' icon={faXTwitter}></FontAwesomeIcon></a>
+          <a rel="noreferrer" href="https://www.instagram.com/mr__g">
+          <FontAwesomeIcon className='apps' icon={faInstagram}></FontAwesomeIcon></a>
+          <a rel="noreferrer" href="https://github.com/amalvelloth">
+          <FontAwesomeIcon className='apps' icon={faGithub}></FontAwesomeIcon></a>
         </div>
         <div className="footer-content">
 
