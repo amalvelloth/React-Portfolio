@@ -3,7 +3,7 @@
     src: url(../Fonts/Raleway-Medium.ttf);
 }
 
-nav{
+nav {
     position: fixed;
     display: flex;
     width: 100%;
@@ -16,7 +16,7 @@ nav{
     z-index: 9999;
 }
 
-#navbar{
+#navbar {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -30,12 +30,28 @@ nav{
     position: relative;
 }
 
-.active{
+.active {
     color: black;
 }
 
+.github-star {
+    align-items: right;
+    background-color: #934cce5e;
+    padding: 0.5rem 0.8rem;
+    border-radius: 5px;
+    border-color: #934cce5e;
+    transition: 0.3s ease
+}
+
+.github-star:hover {
+    transform: translateY(-2px);
+    background-color: #a24dd386;
+    border-color: #a24dd386;
+}
+
+
 #navbar li:active,
-#navbar li:hover{
+#navbar li:hover {
     color: black;
 }
 
@@ -47,7 +63,7 @@ nav{
     transition: 0.3s ease-in-out;
 }
 
-#navbar li::after{
+#navbar li::after {
     content: "";
     height: 4px;
     width: 100%;
@@ -58,22 +74,24 @@ nav{
     bottom: -16.5px;
     opacity: 0;
     transition: all 0.3s
-
 }
 
 
 #navbar li:hover::after,
-#navbar li:focus::after{
+#navbar li:focus::after {
     opacity: 1;
 }
 
 
 
-.home,.about,.portfolio,.contact{
+.home,
+.about,
+.portfolio,
+.contact {
     text-decoration: none;
 }
 
-#mobile i{
+#mobile i {
     display: none;
 }
 
@@ -85,7 +103,7 @@ nav{
 
 
 
-@media screen and (max-width: 767px){
+@media screen and (max-width: 767px) {
     #navbar {
         display: flex;
         flex-direction: column;
@@ -101,29 +119,17 @@ nav{
         transition: 0.3s ease-in-out;
         background-color: hsla(240, 6%, 6%, 0.692);
         backdrop-filter: blur(0.5rem);
-        border: 5px solid rgba(255, 255, 255, 0.075);  
-        border-radius: 1rem 0 ;   
+        border: 5px solid rgba(255, 255, 255, 0.075);
+        border-radius: 1rem 0;
     }
 
-    /*.rotatingtextmob{
+    nav {
+        justify-content: space-between;
+    }
+
+    .github-star {
         display: block;
-        text-align: center;
-        position: fixed;
-        font-family: poppinsxlight;
-        color: rgb(255, 255, 255);
-        right: 8.5rem;
-        bottom: 5rem;
     }
-    .githubi2{
-        color: rgb(119,119,119);
-    }
-    .githubi2:hover{
-        color: black;
-        cursor: pointer;
-    }
-    .githubi2:focus{
-        fill: black;
-    }*/
 
     #navbar.active {
         right: 0px;
@@ -137,35 +143,23 @@ nav{
         font-size: 19px;
         right: 0px;
         border-radius: 0.2rem;
-        padding : 1rem 1rem 0 0;
+        padding: 1rem 1rem 0 0;
     }
 
-    #navbar li{
+    #navbar li {
         margin-bottom: 25px;
     }
 
-    #mobile i{
+    #mobile i {
         display: block;
     }
 
-    #mobile li{
+    #mobile li {
         font-size: 24px;
     }
-
-    /*.rotatingtext{
-        position: fixed;
-        right: 1.5rem;
-        margin-top: 16rem;
-        font-family: poppinsxlight;
-        color: rgb(255, 0, 0);
-        font-size: 8px;
-        writing-mode: vertical-rl;
-        transform: rotate(180deg);
-    }*/
 }
 
-@media screen and (max-width: 575.98px){
-    #navbar{
-        
-    }
+@media screen and (max-width: 575.98px) {
+    /*#navbar{ 
+    }*/
 }

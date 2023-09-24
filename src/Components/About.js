@@ -80,29 +80,6 @@ function About() {
           </div>
         </div>
 
-        {/*<div class="icon-grid">
-          <div class="icon-card">
-            <AiFillHtml5 className='icon' />
-          </div>
-          <div class="icon-card">
-            <DiJavascript1 className='icon' />
-          </div>
-          <div class="icon-card">
-            <DiCss3 className='icon' />
-          </div>
-          <div class="icon-card">
-            <FaBootstrap className='icon' />
-          </div>
-          <div class="icon-card">
-            <TbBrandRedux className='icon' />
-          </div>
-          <div class="icon-card">
-            <FaReact className='icon' />
-          </div>
-          <div class="icon-card">
-            <BsGit className='icon' />
-          </div>
-        </div>*/}
       </div>
     </div>
 
