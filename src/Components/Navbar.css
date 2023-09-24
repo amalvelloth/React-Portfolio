@@ -91,11 +91,10 @@ nav {
     text-decoration: none;
 }
 
-#mobile i {
-    display: none;
-}
 
 #mobile i {
+    display: none;
+    font-size: 30px;
     color: black;
     margin-right: -1rem;
 }
