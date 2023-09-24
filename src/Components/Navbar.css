@@ -36,17 +36,17 @@ nav {
 
 .github-star {
     align-items: right;
-    background-color: #934cce5e;
+    background-color: #ab66e2;
     padding: 0.5rem 0.8rem;
     border-radius: 5px;
-    border-color: #934cce5e;
+    border-color: #ab66e2;
     transition: 0.3s ease
 }
 
 .github-star:hover {
-    transform: translateY(-2px);
-    background-color: #a24dd386;
-    border-color: #a24dd386;
+    transform: translateY(-3px);
+    background-color: #a24dd3;
+    border-color: #a24dd3;
 }
 
 
