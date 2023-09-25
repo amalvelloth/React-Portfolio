@@ -41,7 +41,7 @@
     max-width: 100%;
     display: grid;
     align-items: left;
-    margin: 6rem 0 0 11.5%;
+    margin: 3rem 0 0 11.5%;
     left: 0;
 }
 
@@ -62,12 +62,12 @@
 }
 .mail{
     font-family: ralewayb;
-    padding: 0 0 1.8rem 4rem;
+    padding: 0 0 1.5rem 4rem;
     color: #1D1F45;
 }
 .phone{
     font-family: ralewayb;
-    padding: 1.8rem 0 0 4rem;
+    padding: 1.5rem 0 0 4rem;
     color: #1D1F45;
 }
 .socialapps{
@@ -78,7 +78,7 @@
     padding-right: 1rem;
 }
 .socialapps{
-    padding-top: 6rem;
+    padding-top: 5.5rem;
     font-family: ralewayb;
 }
 .phone-title{
