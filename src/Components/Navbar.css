@@ -52,7 +52,7 @@ nav {
 .github-star:hover .fastar, 
 .github-star:hover .facodebranch{
     transition: 0.5s ease;
-    color: purple;
+    color: rgb(139, 0, 139);
 }
 .facodebranch, .fastar{
     font-size: 1rem;
