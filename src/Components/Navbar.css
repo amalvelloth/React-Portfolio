@@ -4,6 +4,7 @@
 }
 
 nav {
+    display: block;
     position: fixed;
     display: flex;
     width: 100%;
@@ -31,15 +32,15 @@ nav {
 }
 
 .active {
-    color: black;
+    color: aqua;
 }
 
 .github-star {
     align-items: right;
-    background-color: #ab66e2;
+    background-color: #bb89e7;
     padding: 0.5rem 0.8rem;
     border-radius: 5px;
-    border-color: #ab66e2;
+    border-color: #b89ece;
     transition: 0.3s ease
 }
 
@@ -47,6 +48,11 @@ nav {
     transform: translateY(-3px);
     background-color: #a24dd3;
     border-color: #a24dd3;
+}
+
+.facodebranch, .fastar{
+    font-size: 1rem;
+    color: purple;
 }
 
 
@@ -67,7 +73,7 @@ nav {
     content: "";
     height: 4px;
     width: 100%;
-    background-color: rgb(0, 183, 255);
+    background-color: rgb(0, 204, 255);
     display: block;
     position: relative;
     left: 0;
@@ -98,6 +104,9 @@ nav {
     color: black;
     margin-right: -1rem;
 }
+
+
+
 
 
 

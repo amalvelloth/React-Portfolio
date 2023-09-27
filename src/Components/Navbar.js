@@ -3,7 +3,7 @@ import './Navbar.css'
 import { NavLink } from 'react-router-dom';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCodeBranch } from '@fortawesome/free-solid-svg-icons';
-import { faStar } from '@fortawesome/free-regular-svg-icons';
+import { faStar } from '@fortawesome/free-solid-svg-icons';
 
 
 
@@ -38,8 +38,8 @@ class Navbar extends Component {
                             </NavLink>
 
                             <button className='github-star'>
-                                <FontAwesomeIcon icon={faCodeBranch}></FontAwesomeIcon>
-                                <FontAwesomeIcon icon={faStar}></FontAwesomeIcon>
+                                <FontAwesomeIcon className='facodebranch' icon={faCodeBranch}></FontAwesomeIcon>
+                                <FontAwesomeIcon className='fastar' icon={faStar}></FontAwesomeIcon>
                             </button>
 
                         </ul>
