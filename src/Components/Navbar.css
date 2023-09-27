@@ -37,7 +37,7 @@ nav {
 
 .github-star {
     align-items: right;
-    background-color: #a279c5;
+    background-color: #a667ca;
     padding: 0.5rem 0.8rem;
     border-radius: 5px;
     border-color: #b89ece;
@@ -51,6 +51,7 @@ nav {
 }
 .github-star:hover .fastar, 
 .github-star:hover .facodebranch{
+    transition: 0.5s ease;
     color: purple;
 }
 .facodebranch, .fastar{
