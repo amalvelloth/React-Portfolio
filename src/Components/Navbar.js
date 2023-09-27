@@ -38,8 +38,9 @@ class Navbar extends Component {
                             </NavLink>
 
                             <button className='github-star'>
+                                <a rel="noreferrer" href="https://github.com/amalvelloth">
                                 <FontAwesomeIcon className='facodebranch' icon={faCodeBranch}></FontAwesomeIcon>
-                                <FontAwesomeIcon className='fastar' icon={faStar}></FontAwesomeIcon>
+                                <FontAwesomeIcon className='fastar' icon={faStar}></FontAwesomeIcon></a>
                             </button>
 
                         </ul>
