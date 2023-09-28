@@ -64,7 +64,7 @@ nav {
 
 .github-icon h1 {
     font-family: poppinsb;
-    font-size: 0.8rem;
+    font-size: 0.9rem;
 }
 .github-icon{
     display: none;
@@ -158,7 +158,7 @@ nav {
         display: flex;
         align-items: center;
         justify-content: center;
-        padding: 0.3rem;
+        padding: 0.2rem;
         margin-top: 0.5rem;
         background-color: white;
         border-radius: 5px;
