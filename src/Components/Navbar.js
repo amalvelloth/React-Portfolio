@@ -4,6 +4,7 @@ import { NavLink } from 'react-router-dom';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCodeBranch } from '@fortawesome/free-solid-svg-icons';
 import { faStar } from '@fortawesome/free-solid-svg-icons';
+import { BiChevronDown } from 'react-icons/bi'
 
 
 
@@ -42,6 +43,11 @@ class Navbar extends Component {
                                 <FontAwesomeIcon className='facodebranch' icon={faCodeBranch}></FontAwesomeIcon>
                                 <FontAwesomeIcon className='fastar' icon={faStar}></FontAwesomeIcon></a>
                             </button>
+
+                            <button className='github-icon'>
+                                <h1>GitHub</h1><BiChevronDown style={{fontSize:'1.2rem'}}/>
+                            </button>
+                            
 
                         </ul>
                     </div>

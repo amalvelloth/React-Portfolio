@@ -3,6 +3,11 @@
     src: url(../Fonts/Raleway-Medium.ttf);
 }
 
+@font-face {
+    font-family: poppinsb;
+    src: url(../Fonts/Poppins-Bold.ttf);
+}
+
 nav {
     display: block;
     position: fixed;
@@ -31,12 +36,7 @@ nav {
     position: relative;
 }
 
-.active {
-    color: aqua;
-}
-
 .github-star {
-    align-items: right;
     background-color: #a667ca;
     padding: 0.4rem 0.7rem;
     border-radius: 5px;
@@ -49,16 +49,26 @@ nav {
     background-color: #aa60d4;
     border-color: #aa60d4;
 }
-.github-star:hover .fastar, 
-.github-star:hover .facodebranch{
+
+.github-star:hover .fastar,
+.github-star:hover .facodebranch {
     transition: 0.5s ease;
     color: rgb(139, 0, 139);
 }
-.facodebranch, .fastar{
+
+.facodebranch,
+.fastar {
     font-size: 1rem;
     color: #bb89e7;
 }
 
+.github-icon h1 {
+    font-family: poppinsb;
+    font-size: 0.8rem;
+}
+.github-icon{
+    display: none;
+}
 
 #navbar li:active,
 #navbar li:hover {
@@ -142,6 +152,18 @@ nav {
     .github-star {
         display: block;
         margin-top: 3rem;
+    }
+
+    .github-icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0.3rem;
+        background-color: white;
+        border-radius: 5px;
+        outline: none;
+        border-color: whitesmoke;
+        transition: 0.3s ease
     }
 
     #navbar.active {
