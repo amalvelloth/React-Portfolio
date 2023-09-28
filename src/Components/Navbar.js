@@ -38,7 +38,7 @@ class Navbar extends Component {
                             </NavLink>
 
                             <button className='github-star'>
-                                <a rel="noreferrer" href="https://github.com/amalvelloth">
+                                <a rel="noreferrer" href="https://github.com/amalvelloth/React-Portfolio">
                                 <FontAwesomeIcon className='facodebranch' icon={faCodeBranch}></FontAwesomeIcon>
                                 <FontAwesomeIcon className='fastar' icon={faStar}></FontAwesomeIcon></a>
                             </button>
