@@ -29,11 +29,6 @@ nav {
     justify-content: center;
 }
 
-#navbar li .active {
-    color: black;
-    background: white;
-}
-
 #navbar li {
     color: #777;
     font-family: 'ralewaym';
