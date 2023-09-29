@@ -46,8 +46,10 @@ const Home = () => {
             <p className='description' >Full Stack developer, Lorem ipsum dolor sit amet consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 
             <div className='buttons'  >
-              <button className='button1' >Hire me</button>
+              <NavLink to="/contact" style={{textDecoration:'none'}}>
+              <button className='button1' >Contact me</button>
               <button className='button2' >more {">"}</button>
+              </NavLink>
             </div>
 
             <div className='rowtext'>
@@ -114,12 +116,10 @@ const Home = () => {
               </div>
               <div className='home-card-item'>
 
-                <NavLink to="/contact" style={{textDecoration:'none'}}>
                   <button style={{ border: '2px solid #5BE9B9' }}>
                     <h3>Lets do this</h3>
                     <PiHandshake className='handshakeicon' />
                   </button>
-                </NavLink>
 
               </div>
             </div>
