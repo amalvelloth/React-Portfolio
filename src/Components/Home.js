@@ -12,6 +12,7 @@ import { faInstagram } from '@fortawesome/free-brands-svg-icons';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import { PiHandshake } from 'react-icons/pi'
 import { faReact } from '@fortawesome/free-brands-svg-icons';
+import { NavLink } from 'react-router-dom';
 
 
 
@@ -70,7 +71,7 @@ const Home = () => {
         <div className='right'>
           <div className='svg-container'>
             <Lottie animationData={animationData} />
-          </div>       
+          </div>
         </div>
 
 
@@ -112,10 +113,14 @@ const Home = () => {
                 <p>Interested In Collaborating With Me? Let's get in touch</p>
               </div>
               <div className='home-card-item'>
-                <button style={{ border: '2px solid #5BE9B9' }}>
-                  <h3>Lets do this</h3>
-                  <PiHandshake className='handshakeicon' />
-                </button>
+
+                <NavLink to="/contact" style={{textDecoration:'none'}}>
+                  <button style={{ border: '2px solid #5BE9B9' }}>
+                    <h3>Lets do this</h3>
+                    <PiHandshake className='handshakeicon' />
+                  </button>
+                </NavLink>
+
               </div>
             </div>
           </div>
@@ -124,13 +129,13 @@ const Home = () => {
           <h1>FIND ME ON</h1>
           <p>Feel free to <strong>connect</strong> with me</p>
           <a rel="noreferrer" href="https://m.facebook.com/profile.php?id=100010112358900">
-          <FontAwesomeIcon className='apps' icon={faFacebookF}></FontAwesomeIcon></a>
+            <FontAwesomeIcon className='apps' icon={faFacebookF}></FontAwesomeIcon></a>
           <a rel="noreferrer" href="https://www.twitter.com/ImZeke7">
-          <FontAwesomeIcon className='apps' icon={faXTwitter}></FontAwesomeIcon></a>
+            <FontAwesomeIcon className='apps' icon={faXTwitter}></FontAwesomeIcon></a>
           <a rel="noreferrer" href="https://www.instagram.com/mr__g">
-          <FontAwesomeIcon className='apps' icon={faInstagram}></FontAwesomeIcon></a>
+            <FontAwesomeIcon className='apps' icon={faInstagram}></FontAwesomeIcon></a>
           <a rel="noreferrer" href="https://github.com/amalvelloth">
-          <FontAwesomeIcon className='apps' icon={faGithub}></FontAwesomeIcon></a>
+            <FontAwesomeIcon className='apps' icon={faGithub}></FontAwesomeIcon></a>
         </div>
         <div className="footer-content">
 
