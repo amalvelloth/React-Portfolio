@@ -4,8 +4,40 @@ import { NavLink } from 'react-router-dom';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCodeBranch } from '@fortawesome/free-solid-svg-icons';
 import { faStar } from '@fortawesome/free-solid-svg-icons';
-import { BiChevronDown } from 'react-icons/bi'
+/*import { BiChevronDown } from 'react-icons/bi'*/
 
+
+const dropdowns = document.querySelectorAll('.dropdown');
+
+    dropdowns.forEach(dropdown => {
+        
+        const select = dropdown.querySelector('.select');
+        const caret = dropdown.querySelector('.caret');
+        const menu = dropdown.querySelector('.menu');
+        const options = dropdown.querySelector('.menu li');
+        const selected = dropdown.querySelector('.selected');
+
+        select.addEventListener('click', () => {
+            select.classList.toggle('select-clicked');
+            caret.classList.toggle('caret-rotate');
+            menu.classList.toggle('menu-open');
+        });
+
+        options.forEach(option => {
+            option.addEventListener('click', () => {
+                selected.innerText = option.innerText;
+                select.classList.remove('select-clicked');
+                caret.classList.remove('caret-rotate');
+                menu.classList.remove('menu-open');
+
+                options.forEach(option => {
+                    option.classList.remove('active');
+                });
+
+                option.classList.add('active');
+            });
+        });
+    });
 
 
 class Navbar extends Component {
@@ -13,6 +45,9 @@ class Navbar extends Component {
     handleClick = () => {
         this.setState({ clicked: !this.state.clicked })
     }
+
+    
+
 
 
     render() {
@@ -45,9 +80,22 @@ class Navbar extends Component {
                                 <FontAwesomeIcon className='fastar' icon={faStar}></FontAwesomeIcon></a>
                             </button>
 
-                            <button className='github-icon'>
+                            {/*<button className='github-icon'>
                                 <h1>GitHub</h1><BiChevronDown style={{fontSize:'1.2rem'}}/>
-                            </button>
+                            </button>*/}
+
+
+                            <div className='dropdown'>
+                                <div className='select'>
+                                    <span className='selected'>GitHub</span>
+                                    <div className='caret'></div>
+                                </div>
+                                <ul className='menu'>
+                                    <li className='active'>Profile</li>
+                                    <li>Repositories</li>
+                                </ul>
+                            </div>
+
                             
 
                         </ul>
