@@ -25,7 +25,7 @@ const dropdowns = document.querySelectorAll('.dropdown');
 
         options.forEach(option => {
             option.addEventListener('click', () => {
-                selected.innerText = option.innerText;
+                selected.innerText = options.innerText;
                 select.classList.remove('select-clicked');
                 caret.classList.remove('caret-rotate');
                 menu.classList.remove('menu-open');
