@@ -34,7 +34,7 @@ const dropdowns = document.querySelectorAll('.dropdown');
                     option.classList.remove('active');
                 });
 
-                option.classList.add('active');
+                option.classList.add('active'); 
             });
         });
     });
