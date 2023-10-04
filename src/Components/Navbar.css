@@ -34,7 +34,10 @@ nav {
     background: white;
 }
 
-.home li, .about li, .portfolio li, .contact li{
+.home li,
+.about li,
+.portfolio li,
+.contact li {
     color: #777;
     font-family: 'ralewaym';
     list-style: none;
@@ -124,9 +127,11 @@ nav {
     display: none;
 }
 
-.dropdown{
+.dropdown {
     display: none;
 }
+
+
 
 
 @media screen and (max-width: 767px) {
@@ -165,25 +170,15 @@ nav {
         margin-top: 3rem;
     }
 
-    .github-icon {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        padding: 0.2rem;
-        margin-top: 0.5rem;
-        background-color: white;
-        border-radius: 5px;
-        outline: none;
-        border-color: whitesmoke;
-        transition: 0.3s ease
-    }
-
     #navbar.active {
         right: 0px;
     }
 
 
-    .home li, .about li, .contact li, .portfolio li{
+    .home li,
+    .about li,
+    .contact li,
+    .portfolio li {
         font-family: 'ralewaym';
         color: white;
         list-style: none;
@@ -202,19 +197,17 @@ nav {
         font-size: 24px;
     }
 
-    .dropdown{
+
+
+    .dropdown {
         display: block;
-        min-width: 7rem;
-        position: relative;
-        align-items: right;
-        margin-top: 0.5rem;
     }
-    
+
     .dropdown *{
         box-sizing: border-box;
     }
-    
-    .select{
+
+    .github-icon {
         background: #2a2f3b;
         color: #fff;
         display: flex;
@@ -222,75 +215,63 @@ nav {
         align-items: center;
         border: 2px #2a2f3b solid;
         border-radius: 0.5rem;
+        margin-top: 0.5rem;
         padding: 0.5rem;
         cursor: pointer;
         transition: background 0.3s;
     }
-    
-    .select-clicked{
-        border: 2px #26489a solid;
-        box-shadow: 0 0 0.8em #26489a;
-    }
-    
-    .select:hover{
+
+    .github-icon:hover{
         background: #323741;
     }
-    
-    .caret{
-        width: 0;
-        height: 0;
-        border-left: 5px solid transparent;
-        border-right: 5px solid transparent;
-        border-top: 6px solid #fff;
+
+    .down{
         transition: 0.3s;
     }
-    
-    .caret-rotate{
+
+    .github-icon:hover .down{
         transform: rotate(180deg);
     }
-    
-    .menu{
+
+    .dropdown-content:hover .down{
+        transform: rotate(180deg);
+    }
+
+    /* Style the dropdown content (hidden by default) */
+    .dropdown-content {
+        display: none;
         list-style: none;
         background: #323741;
-        border: 1px #363a43 solid;
+        width: 8rem;
         box-shadow: 0 0.5em 1em rgba(0, 0, 0, 0.2);
+        border: 1px #363a43 solid;
+        border-radius: 0.5rem;
+        transform: translateX(-50%);
+        cursor: pointer;
+        transition: 0.2s;
+        position: absolute;
+        left: 30%;
+    }
+
+    /* Style the links inside the dropdown */
+    .dropdown-content a {
+        padding: 0.3rem;
+        text-decoration: none;
         border-radius: 0.5rem;
         color: #9fa5b5;
-        position: absolute;
-        align-items: center;
-        top: 2.4rem;
-        left: 80%;
-        width: 8rem;
-        height: 5rem;
-        transform: translateX(-50%);
-        opacity: 0;
-        display: none;
-        transition: 0.2s;
-        z-index: 1;
+        display: block;
     }
-    
-    .menu li{
-        padding: 0.3rem;
-        margin: 0.3rem 0;
-        border-radius: 0.5rem;
-        cursor: pointer;
-    }
-    
-    .menu li:hover{
+
+    /* Change color of dropdown links on hover */
+    .dropdown-content a:hover {
         background: #2a2d35;
     }
-    
-    .active{
-        background: #23242a;
-    }
-    
-    .menu-open{
-        display: block;
-        opacity: 1;
-    }
-}
 
-@media screen and (max-width: 575.98px) {
-    /*#navbar{ 
-    }*/
+    /* Show the dropdown content when the button is hovered over */
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+
+
+
 }
