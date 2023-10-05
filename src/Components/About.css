@@ -62,7 +62,7 @@
 }
 .portfolio-card:hover{
   transform: scale(1.01);
-  box-shadow: 0px 0px 30px -15px purple;
+  box-shadow: 0px 0px 29px -15px purple;
   color: black;
 }
 
