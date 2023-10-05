@@ -242,6 +242,7 @@ nav {
         display: none;
         list-style: none;
         background: #323741;
+        padding: 0.3rem;
         width: 8rem;
         box-shadow: 0 0.5em 1em rgba(0, 0, 0, 0.2);
         border: 1px #363a43 solid;
@@ -249,8 +250,8 @@ nav {
         transform: translateX(-50%);
         cursor: pointer;
         transition: 0.3s;
-        position: absolute;
-        left: 30%;
+        position: relative;
+        left: 50%;
     }
 
     /* Style the links inside the dropdown */
