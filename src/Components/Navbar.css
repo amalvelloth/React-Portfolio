@@ -144,7 +144,7 @@ nav {
         top: 50px;
         right: -383px;
         width: 50%;
-        height: 100vh;
+        height: 100%;
         box-sizing: 0 40px 60px 0px rgba(0, 0, 0, 0.1);
         padding: 80px 0 0 20px;
         transition: 0.3s ease-in-out;
@@ -167,7 +167,7 @@ nav {
 
     .github-star {
         display: block;
-        margin-top: 3rem;
+        margin-top: 2rem;
     }
 
     #navbar.active {
@@ -248,14 +248,14 @@ nav {
         border-radius: 0.5rem;
         transform: translateX(-50%);
         cursor: pointer;
-        transition: 0.2s;
+        transition: 0.3s;
         position: absolute;
         left: 30%;
     }
 
     /* Style the links inside the dropdown */
     .dropdown-content a {
-        padding: 0.3rem;
+        padding: 0.8rem;
         text-decoration: none;
         border-radius: 0.5rem;
         color: #9fa5b5;
