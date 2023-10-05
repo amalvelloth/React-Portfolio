@@ -47,8 +47,8 @@ const Home = () => {
 
             <div className='buttons'  >
               <NavLink to="/contact" style={{textDecoration:'none'}}>
-              <button className='button1' >Contact me</button>
-              <button className='button2' >more {">"}</button></NavLink>
+              <button className='button1' >Contact me</button></NavLink>
+              <button className='button2' >more {">"}</button>
               
             </div>
 
